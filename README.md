@@ -1,4 +1,3 @@
-
 <h2 align="center">webpack-sass-bootstrap-boilerplate</h2>
 
 <p align="center">
@@ -112,3 +111,4 @@ experiment with the changes live.)
 
 # Licence
 Code released under the [MIT License](LICENSE.md).
+
