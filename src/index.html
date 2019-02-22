@@ -6,9 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="d-flex flex-row justify-content-around align-items-center">
-                <div><img src="images/home/DoingGood_logo_HERO_RGB.png" alt="logo" width="150"/></div>
+        <div class="container-fluid d-block d-sm-none">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="images/home/DoingGood_logo_HERO.png" alt="logo" width="80"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto text-right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Start Doing Good</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Member Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Search Postings</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container-fluid d-none d-sm-block">
+            <div class="d-flex flex-row justify-content-around align-items-center py-3">
+                <div><img src="images/home/DoingGood_logo_HERO.png" alt="logo" width="120"/></div>
                 <div>
                     <div class="text-uppercase border-primary border rounded text-center f-18 py-1 px-2 font-weight-bold">
                         <a href="#">
@@ -31,11 +53,11 @@
         </div>
         <div class="container dg-about">
             <div class="row">
-                <div class=" d-flex align-items-center col-sm-2 col-xs-12">
-                    <img src="images/home/DoingGood_logo_HERO_RGB.png" alt="logo" width="200"/>
+                <div class=" d-flex align-items-center col-sm-2 col-xs-12 ">
+                    <img src="images/home/DoingGood_logo_HERO_RGB.png" alt="logo" width="200" class=" d-none d-sm-block"/>
                 </div>
-                <div class=" d-flex align-items-center col-sm-10 col-xs-12">
-                    <p class="m-0 f-20"><span class="text-primary">DoingGood</span> is a platform that empowers YOU to use YOUR time, talents and resources to raise money for the worthy causes you are passionate about.</p>
+                <div class="d-flex align-items-center col-sm-10 col-xs-12">
+                    <p class="m-0"><span class="text-primary">DoingGood</span> is a platform that empowers YOU to use YOUR time, talents and resources to raise money for the worthy causes you are passionate about.</p>
                 </div>
             </div>
         </div>
@@ -136,7 +158,7 @@
                     <div class="btn btn-primary btn-pill text-uppercase py-2 px-5 mt-3 font-weight-bold">Join Now</div>
                 </div>
                 <div class="col-sm-10 col-xs-12">
-                    <ul class="list-inline f-20">
+                    <ul class="list-inline">
                         <li class="list-inline-item">Professional Help (Legal, accounting, we design, consulting) </li>
                         <li class="list-inline-item">Cooking for a group </li>
                         <li class="list-inline-item">Babysitting</li>
@@ -151,6 +173,20 @@
                         <li class="list-inline-item">Organizing</li>
                         <li class="list-inline-item">Project Assistance </li>
                         <li class="list-inline-item">Arts / Crafts</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid dg-footer bg-primary py-3">
+            <div class="row">
+                <div class="col-sm-3 col-3 d-flex align-items-center"><a href="#" class="font-weight-bold text-white">JOIN</a></div>
+                <div class="col-sm-3 col-4 d-flex align-items-center"><a href="#" class="font-weight-bold text-white">Login</a></div>
+                <div class="col-sm-3 col-5 d-flex align-items-center"><a href="#" class="font-weight-bold text-white">About DoingGood</a></div>
+                <div class="col-sm-3 col-12">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"><img src="images/home/dg-insta.png" alt="logo" width="30"/></a></li>
+                        <li class="list-inline-item"><a href="#"><img src="images/home/dg-fb.png" alt="logo" width="30"/></a></li>
+                        <li class="list-inline-item"><a href="#"><img src="images/home/dg-twitter.png" alt="logo" width="30"/></a></li>
                     </ul>
                 </div>
             </div>

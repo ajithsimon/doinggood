@@ -53,7 +53,11 @@ body {
 }
 
 .dg-about{
-    padding: 3rem 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    p{
+        font-size: 20px;
+    }
 }
 .dg-itseasy{
     padding-bottom: 5rem;
@@ -65,4 +69,66 @@ body {
 }
 .dg-slider{
     padding-bottom: 3rem;
+}
+.dg-youcan{
+    padding-bottom: 3rem;
+    ul{
+        font-size: 20px;
+    }
+}
+.dg-footer{
+    align-items: center;
+    font-size: 16px;
+    .col-sm-3{
+        justify-content: center
+    }
+    ul{text-align: center;}
+}
+
+/*Media queries small devices*/
+/*-------------------------*/
+
+@media only screen and (max-width: 479px){
+    .dg-about{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        p{
+            font-size: 16px;
+        }
+    }
+    .dg-itseasy{
+        padding-bottom: 2rem;
+        .col-xs-12{
+            margin-bottom: 2rem;
+        }
+    }
+    .dg-showgrid{
+        .col-sm-2{
+            text-align: center;
+            margin-bottom: 1rem
+        }
+        .btn{
+            margin-top: 1rem;
+        }
+    }
+    .dg-slider{
+        img{
+            margin-bottom: 1rem;
+        }
+    }
+    .dg-youcan{
+        .col-sm-2{
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        ul{
+            font-size: 16px;
+        }
+    }
+    .dg-footer{
+        font-size: 14px;
+        ul{
+            margin-top: 2rem;
+        }
+    }
 }
