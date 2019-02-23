@@ -48,6 +48,13 @@ body {
 .f-20{
     font-size: 20px;
 }
+.btn-primary{
+    box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4); 
+    transition: all 0.3s ease 0s;
+    &:hover{
+        transform: translateY(-5px);
+    }
+}
 .btn-pill{
     border-radius: 100px
 }
