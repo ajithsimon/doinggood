@@ -16,7 +16,7 @@ body {
     color: white;
 }
 .fw-600{
-    font-weight: bold;
+    font-weight: 600;
 }
 .fw-bold{
     font-weight: bold;
@@ -48,7 +48,12 @@ body {
 .f-20{
     font-size: 20px;
 }
-.btn-primary{
+.btn{
+    &:focus{
+        box-shadow: none !important;
+    }
+}
+.btn-shadow{
     box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4); 
     transition: all 0.3s ease 0s;
     &:hover{
@@ -59,6 +64,8 @@ body {
     border-radius: 100px
 }
 
+/*Home Page*/
+/*--------*/
 .dg-about{
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -81,6 +88,9 @@ body {
     padding-bottom: 3rem;
     ul{
         font-size: 20px;
+        li{
+            display: inline-block;
+        }
     }
 }
 .dg-footer{
@@ -92,10 +102,63 @@ body {
     ul{text-align: center;}
 }
 
+/*Search Postings*/
+/*-------------*/
+.service-select{
+    margin: 4rem 3rem 1rem;
+    .card-body{
+        ul{
+            margin: 0;
+            margin-bottom: 1rem;
+            li{
+                font-weight: 600;
+                line-height: 2.3;
+                margin-right: 0;
+                div{
+                    padding: 0 8px;
+                    box-shadow: 0 7px 35px rgba(0, 0, 0, 0.05); 
+                }
+            }
+        }
+    }
+}
+
+/*Member dashboard*/
+/*--------------*/
+.db-welcome{
+    padding: 18px;
+    background: url('../images/dashboard/sky_wide-min.jpg');
+    background-position: bottom;
+    background-size: 100%;
+    img{
+        width: 120px;
+    }
+    .title{
+        font-weight: 600;
+    }
+    .content{
+        font-size: 18px;
+    }
+}
+.db-pagehead{
+    font-size: 18px;
+    font-weight: 600;
+    a{
+        font-size: 16px;
+        text-decoration: underline;
+        &:hover{
+            color: white;
+        }
+    }
+}
+
+
 /*Media queries small devices*/
 /*-------------------------*/
 
 @media only screen and (max-width: 479px){
+    /*Home Page*/
+    /*---------*/
     .dg-about{
         padding-top: 2rem;
         padding-bottom: 2rem;
@@ -137,5 +200,15 @@ body {
         ul{
             margin-top: 2rem;
         }
+    }
+    .dg-search{
+        .form-control{
+            margin-bottom: 1rem;
+        }
+    }
+    /*Search Postings*/
+    /*--------------*/
+    .service-select {
+        margin: 1rem 0 0;
     }
 }
