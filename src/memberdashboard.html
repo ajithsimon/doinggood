@@ -11,13 +11,13 @@
                 <div class="col-sm-2 col-4 d-flex align-items-center justify-content-center">
                     <img src="images/dashboard/Photo_icon.png" alt="upload"/>
                 </div>
-                <div class="col-sm-3 col d-flex justify-content-center flex-column">
+                <div class="col-sm-3 col-8 d-flex justify-content-center flex-column">
                     <h3 class="title">Welcome, Ajithkumar</h3>
                     <p class="content m-0">You are DoingGood by offering your time, services and goods.</p>
                 </div>
                 <div class="col-sm-7 col d-flex justify-content-end align-items-center">
-                    <span class="font-weight-bold mr-2 h3 mb-0">Thank you for</span>
-                    <img src="images/home/DoingGood_logo_HERO.png" alt="logo"/>
+                    <span class="font-weight-bold mr-2 h3 mb-0  d-none d-sm-block">Thank you for</span>
+                    <img src="images/home/DoingGood_logo_HERO.png" alt="logo" class=" d-none d-sm-block"/>
                 </div>
             </div>
         </div>
@@ -29,58 +29,110 @@
                 </div>
             </div>
         </div>
-        <div class="">
+        <div class="mt-4">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-5">
                         <div class="card mb-4">
-                            <div class="card-body">
+                            <div class="card-body bg-light">
                                 <div class="clearfix">
                                     <h5 class="card-title float-left fw-600">About Me</h5>
                                     <div class="float-right">
                                         <a href="#">
                                             Edit
                                         </a>
+                                        <div class="d-none">
+                                            <button class="btn btn-sm btn-default px-3 mr-2">Cancel</button>
+                                            <button class="btn btn-sm btn-info px-3">Save</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="p-2 mb-2 bg-light text-dark border">Ajith</div>
-                                <div class="p-2 mb-2 bg-light text-dark border">Kumar</div>
-                                <div class="p-2 mb-2 bg-light text-dark border"><span class="fw-600 mr-2">Zipcode:</span> 5445454</div>
-                                <div class="p-2 mb-2 bg-light text-dark border">
+                                <div class="p-2 mb-2 bg-white text-dark border">Ajith</div>
+                                <div class="p-2 mb-2 bg-white text-dark border">Kumar</div>
+                                <div class="p-2 mb-2 bg-white text-dark border"><span class="fw-600 mr-2">Zipcode:</span> 5445454</div>
+                                <div class="p-2 mb-2 bg-white text-dark border">
                                     <p class="fw-600">About:</p> 
                                     <p class="m-0">Lorem ipsum dollar sit amet, Lorem ipsum dollar sit amet, Lorem ipsum dollar sit amet, Lorem ipsum dollar sit amet, Lorem ipsum dollar sit amet.</p>
                                 </div>
-                                <div class="p-2 mb-2 bg-light text-dark border"><span class="fw-600 mr-2">Phone:</span> 5498945454</div>
-                                <div class="p-2 bg-light text-dark border"><span class="fw-600 mr-2">Email:</span> ajith@gmail.com</div>
+                                <div class="p-2 mb-2 bg-white text-dark border"><span class="fw-600 mr-2">Phone:</span> 5498945454</div>
+                                <div class="p-2 bg-white text-dark border"><span class="fw-600 mr-2">Email:</span> ajith@gmail.com</div>
+                                <form class="d-none">
+                                    <div class="form-group mb-2">
+                                        <input class="form-control" type="text" value="Ajith"/>
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <input class="form-control" type="text" value="Kumar"/>
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <input class="form-control" type="text" value="123987"/>
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <textarea class="form-control"></textarea>
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <input class="form-control" type="text" value="9090900909" maxlength="10"/>
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <input class="form-control" type="email" value="ajith@gmail.com"/>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                         <div class="card mb-4">
-                            <div class="card-body">
+                            <div class="card-body bg-light">
                                 <h5 class="card-title fw-600">My Interested Charitable Oragnizations</h5>
+                                <ul class="list-inline row mb-0">
+                                    <li class="list-inline-item fw-600 col-sm-9 col p-2 bg-white text-dark border">Name</li> 
+                                    <li class="list-inline-item text-white font-weight-bold col d-flex justify-content-center align-items-center p-2 bg-info border">100%</li> 
+                                </ul>
                             </div>
                         </div>
                         <div class="card mb-4">
-                            <div class="card-body">
+                            <div class="card-body bg-light">
                                 <h5 class="card-title fw-600">My DoingGood Success</h5>
+                                <ul class="list-inline row mb-0">
+                                    <li class="list-inline-item fw-600 col-sm-9 col p-2 bg-white text-dark border">$$$ RAISED (to date)</li> 
+                                    <li class="list-inline-item text-white font-weight-bold col text-center p-2 bg-primary border">100$</li> 
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-7">
                         <div class="card mb-4">
-                            <div class="card-body">
+                            <div class="card-body bg-light">
                                 <h5 class="card-title fw-600">My accepted Volunteering Opportunities/purchased goods</h5>
                             </div>
                         </div>
                         <div class="card mb-4">
-                            <div class="card-body">
+                            <div class="card-body bg-light">
                                 <h5 class="card-title fw-600">My Posts</h5>
+                                <div class="p-2 bg-white text-dark border mb-2">
+                                    <ul class="list-inline row mb-0">
+                                        <li class="list-inline-item fw-600 col-sm-9 col">Name</li> 
+                                        <li class="list-inline-item fw-600 col text-center">$1212/item</li> 
+                                    </ul>
+                                </div>
+                                <div class="p-2 bg-white text-dark border mb-2">
+                                    <ul class="list-inline row mb-0">
+                                        <li class="list-inline-item fw-600 col-sm-9 col">Name</li> 
+                                        <li class="list-inline-item fw-600 col text-center">$1212/item</li> 
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="card">
-                            <div class="card-body">
+                            <div class="card-body bg-light">
                                 <h5 class="card-title fw-600">My PENDING Volunteering Opportunities/Purchased Goods</h5>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row db-ctas">
+                    <div class="col text-center mb-5">
+                        <button class="font-weight-bold text-uppercase btn btn-primary f-16 px-4 py-2" data-toggle="modal" data-target="#donateServices"> Post Your New <br/> Goods or Services to Donate</button>
+                    </div>
+                    <div class="col text-center">
+                        <button class="font-weight-bold text-uppercase btn btn-info f-16 px-4 py-2" data-toggle="modal" data-target="#donateServices"> Post A Wanted <br/> Goods or Services to Purchase</button>
                     </div>
                 </div>
             </div>
@@ -119,23 +171,56 @@
             </div>
         </div>
 
-        <div id="postServices" class="modal" tabindex="-1" role="dialog">
+        <div id="donateServices" class="modal fade" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Show Interest</h5>
+                        <h5 class="modal-title"> Post New Goods or Services to Donate</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p class="font-weight-bold">Post Details</p>
-                        <p>Goods/Service:bike for sale</p>
-                        <p>Description:Mens bike for sale, comfort bike. </p>
-                        <p>Rate:</p>
-                        <p>Rate Type:perhour</p>
-                        <p>Please <a href="/login.html">Login</a> to Continue.</p>
-                        <p></p>
+                        <form>
+                            <div class="form-group">
+                                <label class="d-block"> Services/Goods Offered </label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="">
+                                    <label class="form-check-label" for="inlineRadio1">Goods</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Services</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Goods/Service</label>
+                                <input type="text" class="form-control" placeholder="Enter text">
+                            </div>
+                            <div class="form-group">
+                                <label>Description</label>
+                                <input type="text" class="form-control" placeholder="Enter Description">
+                            </div>
+                            <div class="form-group">
+                                <label>Rate</label>
+                                <input type="text" class="form-control" placeholder="Enter Rate">
+                            </div>
+                            <div class="form-group">
+                                <label>Minimum</label>
+                                <input type="text" class="form-control" placeholder="Enter Minimum Rate">
+                            </div>
+                            <div class="form-group">
+                                <label>Maximum</label>
+                                <input type="text" class="form-control" placeholder="Enter Maximum Rate">
+                            </div>
+                            <div class="form-group mb-0">
+                                <label class="d-block"> Rate type </label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ratetype" id="inlineRadio3" value="" checked="">
+                                    <label class="form-check-label" for="inlineRadio3">Per item</label>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

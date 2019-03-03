@@ -63,7 +63,16 @@ body {
 .btn-pill{
     border-radius: 100px
 }
-
+.form-group{
+    label{
+        font-weight: 600;
+    }
+    .form-control{
+        &:focus{
+            box-shadow: none;
+        }
+    }
+}
 /*Home Page*/
 /*--------*/
 .dg-about{
@@ -129,7 +138,8 @@ body {
     padding: 18px;
     background: url('../images/dashboard/sky_wide-min.jpg');
     background-position: bottom;
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
     img{
         width: 120px;
     }
@@ -151,64 +161,7 @@ body {
         }
     }
 }
+.db-ctas{margin-top: 2rem;}
 
-
-/*Media queries small devices*/
-/*-------------------------*/
-
-@media only screen and (max-width: 479px){
-    /*Home Page*/
-    /*---------*/
-    .dg-about{
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        p{
-            font-size: 16px;
-        }
-    }
-    .dg-itseasy{
-        padding-bottom: 2rem;
-        .col-xs-12{
-            margin-bottom: 2rem;
-        }
-    }
-    .dg-showgrid{
-        .col-sm-2{
-            text-align: center;
-            margin-bottom: 1rem
-        }
-        .btn{
-            margin-top: 1rem;
-        }
-    }
-    .dg-slider{
-        img{
-            margin-bottom: 1rem;
-        }
-    }
-    .dg-youcan{
-        .col-sm-2{
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        ul{
-            font-size: 16px;
-        }
-    }
-    .dg-footer{
-        font-size: 14px;
-        ul{
-            margin-top: 2rem;
-        }
-    }
-    .dg-search{
-        .form-control{
-            margin-bottom: 1rem;
-        }
-    }
-    /*Search Postings*/
-    /*--------------*/
-    .service-select {
-        margin: 1rem 0 0;
-    }
-}
+/*Mobile sass always should be in the bottom of main css*/
+@import "mobile";
