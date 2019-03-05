@@ -24,8 +24,13 @@ and open the template in the editor.
     }
     .dg-itseasy{
         padding-bottom: 2rem;
-        .col-xs-12{
+        .col-sm{
             margin-bottom: 2rem;
+        }
+        .col-3{
+            img{
+                width: 80px;
+            }
         }
     }
     .dg-showgrid{
