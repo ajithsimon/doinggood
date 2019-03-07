@@ -48,6 +48,9 @@ body {
 .f-20{
     font-size: 20px;
 }
+.h-100vh{
+    min-height: 100vh
+}
 .btn{
     &:focus{
         box-shadow: none !important;
@@ -162,6 +165,24 @@ body {
     }
 }
 .db-ctas{margin-top: 2rem;}
+
+/*Login screen*/
+/*------------*/
+.login-wrapper{
+    background: url('../images/dashboard/sky_wide-min.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 0 12px;
+    .card{
+        width: 380px;
+        border: 7px solid #ddd;
+        .card-body{
+            padding: 2rem;
+        }
+    }
+}
 
 /*Mobile sass always should be in the bottom of main css*/
 @import "mobile";
