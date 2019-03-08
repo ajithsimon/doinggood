@@ -89,4 +89,14 @@ and open the template in the editor.
         }
     }
     .db-ctas{margin-bottom: 4rem;}
+    /*Login screen*/
+    /*------------*/
+    .login-wrapper{
+        .card{
+            border: 5px solid #ddd;
+            .card-body{
+                padding: 1rem;
+            }
+        }
+    }
 }

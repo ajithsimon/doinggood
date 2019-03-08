@@ -169,7 +169,7 @@ body {
 /*Login screen*/
 /*------------*/
 .login-wrapper{
-    background: url('../images/dashboard/sky_wide-min.jpg');
+    background-image: url('../images/dashboard/sky_wide-min.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -181,6 +181,16 @@ body {
         .card-body{
             padding: 2rem;
         }
+    }
+    &.signup-page{
+        background-image: url('../images/teach_guitar-bright1.jpg');
+        background-attachment: fixed;
+        padding: 4rem 12px;
+    }
+    &.signup-page2{
+        background-image: url('../images/group-discussion.jpg');
+        background-attachment: fixed;
+        padding: 4rem 12px;
     }
 }
 
